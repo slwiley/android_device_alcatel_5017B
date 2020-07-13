@@ -52,7 +52,7 @@ deploy:
   file: $HOME/twrp/*.img
   on:
     tags: false
-    repo: slwiley/android_device_alcatel_5017B.git # Optional: If you want to deploy on different repository
+    repo: https://github.com/slwiley/android_device_alcatel_5017B.git # Optional: If you want to deploy on different repository
     branch: master # Optional: Needs to be exact as the config branch
 branches:
   only:
