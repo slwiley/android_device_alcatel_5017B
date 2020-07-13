@@ -44,7 +44,6 @@ after_success:
   # Optional: You might need to switch from https://transfer.sh to https://file.io
    - curl -s --upload-file TWRP-$version-$$DEVICE$$-$(date +"%Y%m%d")-Unofficial.img https://file.io/ && echo ""
 deploy:
-  cleanup: false
   provider: releases
   # The secret api_key will be loaded from the environment variables
   api_key: $GitOAUTHToken
