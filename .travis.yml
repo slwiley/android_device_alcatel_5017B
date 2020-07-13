@@ -42,9 +42,9 @@ after_success:
   - cp $HOME/twrp/out/target/product/5017B/recovery.img $HOME/twrp/TWRP-$version-5017B-$(date +"%Y%m%d")-Unofficial.img
   - cd $HOME/twrp/
   # Optional: You might need to switch from https://transfer.sh to https://file.io
-  # - curl -s --upload-file TWRP-$version-$$DEVICE$$-$(date +"%Y%m%d")-Unofficial.img https://transfer.sh/ && echo ""
+   - curl -s --upload-file TWRP-$version-$$DEVICE$$-$(date +"%Y%m%d")-Unofficial.img https://file.io/ && echo ""
 deploy:
-  skip_cleanup: true
+  cleanup: false
   provider: releases
   # The secret api_key will be loaded from the environment variables
   api_key: $GitOAUTHToken
