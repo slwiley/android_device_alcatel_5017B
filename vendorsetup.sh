@@ -16,3 +16,7 @@
 
 add_lunch_combo aosp_5017B-userdebug
 add_lunch_combo omni_5017B-userdebug
+add_lunch_combo omni_5017B-eng
+add_lunch_combo asop_5017B-eng
+
+
