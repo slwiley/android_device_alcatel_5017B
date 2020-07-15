@@ -32,7 +32,7 @@ script:
     source build/envsetup.sh
     # Choose build flavor as "eng" or "userdebug"
     BUILD_FLAVOR="userdebug"
-    lunch omni_5017B-${BUILD_FLAVOR}
+    lunch omni_5017B-userdebug
     make -j$(nproc --all) recoveryimage
     exit
     EOF
